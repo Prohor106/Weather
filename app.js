@@ -18,6 +18,7 @@ const searchTemperature = () => {
     fetch(url)
         .then(res => res.json())
         .then(data => {
+            console.log(data.cod)
             if (data.cod === 200) {
                 displayTemperature(data);
                 console.log(data)
@@ -49,9 +50,7 @@ const displayTemperature = (temperature) => {
 
 const setInnerText = (id, text) => {
     const element = document.getElementById(id);
-    if (element) {
-        element.innerText = text;
-    }
+    element.innerText = text;
 };
 
 const showError = (message) => {
