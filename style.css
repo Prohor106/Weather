@@ -15,7 +15,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url("images/3.jpg") no-repeat center center fixed;
+    background: url("images/bg-image.jpg") no-repeat center center fixed;
     background-size: cover;
     z-index: -1;
     filter: blur(10px); 
